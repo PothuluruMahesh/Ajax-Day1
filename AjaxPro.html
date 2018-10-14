@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html>
+<body>
+    <h2>The XMLHttpRequest Object</h2>
+    <p id="demo">Hello World this is from XML file</p>
+    <form>
+    <input type="button" value="Click! here for XML data" onclick="fun()"/>
+        </form>
+    <script>
+        function fun() {
+            var xhttp, xmlDoc, txt, x, i;
+            xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function () {
+                if (this.readyState == 4 && this.status == 200) {
+                    xmlDoc = this.responseXML;
+                    txt = "";
+                    x = xmlDoc.getElementsByTagName("student");
+                    for (i = 0; i < x.length; i++) {
+                        txt = txt +x[i].getElementsByTagName("fname")[0].childNodes[0].nodeValue+"<br>" ;
+                    }
+                    document.getElementById("demo").innerHTML = txt;
+                }
+            };
+            xhttp.open("GET", "infor.xml", true);
+            xhttp.send();
+        }
+    </script>
+</body>
+</html>

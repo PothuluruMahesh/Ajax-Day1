@@ -1,0 +1,30 @@
+<college>
+	<student>
+		<fname>Murali</fname>
+		<lname>Valmiki</lname>
+		<branch>MCA</branch>
+		<no>15bf1f0082</no>
+		<year>2015</year>
+	</student>
+	<student>
+		<fname>Naresh</fname>
+		<lname>vasanth</lname>
+		<branch>MCA</branch>
+		<no>15bf1f0078</no>
+		<year>2015</year>
+	</student>
+	<student>
+		<fname>Swathi</fname>
+		<lname>Vasanth</lname>
+		<branch>MCA</branch>
+		<no>15bf1f0052</no>
+		<year>2015</year>
+	</student>
+	<student>
+		<fname>Narasimha</fname>
+		<lname>Katta</lname>
+		<branch>MBA</branch>
+		<no>16cf1f0014</no>
+		<year>2016</year>
+	</student>
+</college>
